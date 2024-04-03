@@ -1,13 +1,13 @@
 ## index
 
-- [Join](##join)
-- [Transaction](##Transaction)
-- [Transaction ACID](##Transaction ACID )
-- [Transaction Isolated Level](Transaction Isolated Level)
+- [Join](#join)
+- [Transaction](#transaction)
+- [Transaction ACID](#transaction-acid)
+- [Transaction Isolation Level](#transaction-isolation-level)
 
 
 
-## Join
+# Join
 
 데이터베이스의 여러 테이블의 레코드를 하나로 결합하기 위해 사용하는 방법. 조인을 해서 새로운 테이블로 저장하거나, 그 결과를 이용할 수 있는 레코드를 만들어낸다
 
@@ -30,14 +30,11 @@ SELECT * FROM employee, department WHERE employee.DepartmentID = department.Depa
 ```
 
 
-
-
-
-## Transaction
+# Transaction
 
 분리 불가능한 수행 작업의 단위를 의미한다. 작업의 단계가 여러개가 있을 때, 이 작업을 완벽하게 처리하지 못 할경우 원 상태로 복구해서 작업의 일부만 적용되지 않게 방지해야합니다. 여러 단계의 작업이 존재할 때 이 작업들이 모두 성공적으로 완료되어야 성공적으로 완료될 수 있게 해야합니다. 
     
-## Transaction ACID 
+# Transaction ACID 
 
 ##### 원자성
 
@@ -56,7 +53,7 @@ SELECT * FROM employee, department WHERE employee.DepartmentID = department.Depa
 트랜잭션이 정상적으로 종료된 이후에 데이터베이스에 결과가 저장이 되어야 합니다.
     
 
-## Transaction Isolated Level
+# Transaction Isolation Level
 
 트랜잭션이 동시에 처리될때 특정 트랜잭션의 상태를 어느정도 조회할 수 있는지를 이야기한다.
 다른 트랜잭션에서 변경하거나 조회하는 데이터를 볼지 말지를 의미한다.
